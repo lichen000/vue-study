@@ -1,6 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import HelloWorld from '@/components/HelloWorld';
+import MainPage from '@/components/MainPage';
+import Study1 from '@/components/Study1';
+import Study2 from '@/components/Study2';
+import Study3 from '@/components/Study3';
 
 Vue.use(Router);
 
@@ -8,13 +11,23 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'MainPage',
+      component: MainPage
     },
     {
-      path: '/cccc',
-      name: 'HelloWorld',
-      component: HelloWorld
+      path: '/study1',
+      name: 'Study1',
+      component: Study1
+    },
+    {
+      path: '/study2',
+      name: 'Study2',
+      component: Study2
+    },
+    {
+      path: '/study3',
+      name: 'Study3',
+      component: Study3
     }
   ]
 });
